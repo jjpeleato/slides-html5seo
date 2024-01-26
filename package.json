@@ -1,7 +1,7 @@
 {
-	"name": "slides-starter",
+	"name": "html5-seo",
 	"version": "0.1.0",
-	"description": "Slides starter boilerplate",
+	"description": "The HTML 5 SEO presentation",
 	"keywords": [
 		"reveal.js",
 		"lando",
@@ -15,7 +15,7 @@
 	"main": "gulpfile.babel.js",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/jjpeleato/slides-starter-boilerplate.git"
+		"url": "git+https://github.com/jjpeleato/slides-html5seo"
 	},
 	"dependencies": {
 		"@fortawesome/fontawesome-free": "^6.4.0",

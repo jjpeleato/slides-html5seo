@@ -1,13 +1,13 @@
-# Slides: Starter boilerplate
+# Slides: HTML 5 SEO
 
-Short or long description.
+Presentation made for a workshop at the 2017 Web Congress.
 
 ## Environment
 
 - LOCAL: http://web.html5seo.lndo.site/
 - DEV: ~
 - PRE: ~
-- PRO: ~
+- PRO: https://jjpeleato.com/courses/html5forseo/
 
 ## Project
 
