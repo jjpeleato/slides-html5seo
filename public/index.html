@@ -8,28 +8,28 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<!-- Title -->
-		<title>Slides starter boilerplate by @jjpeleato</title>
+		<title>HTML 5 para SEO by @jjpeleato</title>
 		<!-- Information -->
-		<meta name="description" content="Slides starter boilerplate by @jjpeleato">
+		<meta name="description" content="Taller de HTML 5 para SEO en Congreso Web 2017 by @jjpeleato">
 		<meta name="author" content="@jjpeleato">
 		<!-- Datetime -->
-		<meta name="content_origin" content="2023-05-03">
-		<meta name="content_updated" content="2023-05-03">
-		<meta name="minor_updates" content="2023-05-03">
+		<meta name="content_origin" content="2024-01-26">
+		<meta name="content_updated" content="2024-01-26">
+		<meta name="minor_updates" content="2024-01-26">
 		<!-- Social media -->
-		<meta property="og:locale" content="en_GB">
+		<meta property="og:locale" content="es_ES">
 		<meta property="og:type" content="website">
-		<meta property="og:site_name" content="Slides starter boilerplate">
-		<meta property="og:title" content="Slides starter boilerplate">
-		<meta property="og:description" content="Slides starter boilerplate by @jjpeleato">
-		<meta property="og:url" content="https://example.com/">
-		<meta property="og:image" content="https://example.com/image-share.png">
+		<meta property="og:site_name" content="HTML 5 para SEO by @jjpeleato">
+		<meta property="og:title" content="HTML 5 para SEO by @jjpeleato">
+		<meta property="og:description" content="Taller de HTML 5 para SEO en Congreso Web 2017 by @jjpeleato">
+		<meta property="og:url" content="https://jjpeleato.com/courses/html5forseo/">
+		<meta property="og:image" content="https://jjpeleato.com/courses/html5forseo/image-share.png">
 		<meta name="twitter:card" content="summary">
-		<meta name="twitter:title" content="Slides starter boilerplate">
-		<meta name="twitter:description" content="Slides starter boilerplate by @jjpeleato">
+		<meta name="twitter:title" content="HTML 5 para SEO by @jjpeleato">
+		<meta name="twitter:description" content="Taller de HTML 5 para SEO en Congreso Web 2017 by @jjpeleato">
 		<meta name="twitter:site" content="@jjpeleato">
 		<meta name="twitter:creator" content="@jjpeleato">
-		<meta name="twitter:image" content="https://example.com/image-share.png">
+		<meta name="twitter:image" content="https://jjpeleato.com/courses/html5forseo/image-share.png">
 		<!-- Geolocation -->
 		<meta name="geo.region" content="ES-AR">
 		<meta name="geo.placename" content="Huesca">
@@ -55,26 +55,589 @@
 			<div class="slides">
 				<!-- Workshop presentation -->
 				<section>
-					<section>
-						<h1>Slides starter boilerplate</h1>
-						<blockquote>"For any presentation"</blockquote>
-						<p><i class="fa-solid fa-link"></i> <a rel="nofollow" href="#" target="_blank" title="Short link">https://bit.ly/#</a></p>
+					<section data-background="assets/img/background-pdf/background-v0.png">
+						<h3>TALLER #CW17 #HTML5SEO</h3>
+						<h1>HTML 5 para SEO</h1>
+						<blockquote>"I've seen the FUTURE. It's in my BROWSER"</blockquote>
 					</section>
-					<section>
-						<p class="h4">Hello and welcome!</p>
-						<p>My name is <strong>José J. Peleato Pradel</strong>.</p>
-						<p><small>by <a href="https://www.jjpeleato.com/" target="_blank" title="by JJPeleato">jjpeleato.com</a></small></p>
+					<section data-background="assets/img/background.png">
+						<h4>¡Hola y bienvenid@s!</h4>
+						<p>Mi nombre es <strong>José J. Peleato Pradel</strong>.</p>
+						<p><small>by <a href="https://www.jjpeleato.com" target="_blank" title="JJPeleato">jjpeleato.com</a> | #CW17 #HTML5SEO</small></p>
+					</section>
+				</section>
+
+				<!-- What is HTML? -->
+				<section>
+					<section data-background="assets/img/background-pdf/background-v1.png">
+						<h1>¿Qué es HTML?</h1>
+					</section>
+
+					<!-- Tag language -->
+					<section data-background="assets/img/background.png">
+						<h3>Lenguaje de marcas</h3>
+						<p>Un <b>lenguaje de marcado</b> o <b>lenguaje de marcas</b> es un <b>método de codificar un documento</b>, que junto al texto, <b>incorpora etiquetas o marcas</b> que contienen información adicional acerca de la estructura del texto o su presentación.</p>
+					</section>
+					<section data-background="assets/img/background.png">
+						<p><b>Los lenguajes de marcas NO son lenguajes de programación.</b></p>
+						<p>No tienen funciones aritméticas o variables, como si poseen los lenguajes de programación.</p>
+					</section>
+					<section data-background="assets/img/background.png">
+						<p>Los lenguajes de marcas se llaman así por la <b>práctica tradicional de marcar los manuscritos</b> con instrucciones de impresión en los márgenes.</p>
+						<p>En la época de la imprenta, esta tarea ha correspondido a los marcadores, que indicaban el tipo de letra, el estilo y el tamaño, así como la corrección de errores, para que otras personas compusieran la tipografía.</p>
+					</section>
+					<section data-background="assets/img/background.png">
+						<p>Existen tres tipos de marcado:</p>
+						<ul>
+							<li><b>Marcado de presentación</b>: <small>Aquel que indica el formato del texto. Útil para maquetar la presentación de un documento para solo lectura. En desuso.</small></li>
+							<li><b>Marcado de procedimientos</b>: <small>Aquel que está enfocado hacia la re/presentación del texto. El programa que representa el documento debe interpretar el código en el mismo orden en el que aparece. Ejemplos: TeX, HTML, etc.</small></li>
+							<li><b>Marcado descriptivo</b>: <small>Utiliza etiquetas para describir los fragmentos de texto, pero sin especificar como deben ser representados, o en qué orden. Ejemplo: XML, etc.</small></li>
+						</ul>
+					</section>
+
+					<!-- WWW -->
+					<section data-background="assets/img/background.png">
+						<h3>World Wide Web (WWW)</h3>
+						<p><b>World Wide Web (WWW)</b> o red informática mundial es un <b>sistema de distribución de documentos de hipertexto</b> o hipermedios interconectados vía internet.</p>
+					</section>
+					<section data-background="assets/img/background.png">
+						<p>La <b>WWW</b> se desarrolló en Ginebra en las instalaciones del CERN (Organización Europea para la Investigación Nuclear) entre <b>marzo de 1989</b> y <b>diciembre de 1990</b> por el inglés <b>Tim Berners-Lee</b> y el belga <b>Robert Cailliau</b>.</p>
+					</section>
+					<section data-background="assets/img/background.png">
+						<p>Es importante saber que <b>web o www no son sinónimo de Internet</b>, la web es un subconjunto de Internet que consiste en páginas a las que se puede acceder usando un navegador.</p>
+						<p><b>Internet es la red de redes</b> donde reside toda la información. Tanto el correo electrónico, como FTPs, juegos, etc. son parte de Internet, pero no de la Web.</p>
+					</section>
+
+					<!-- Tim Berners-Lee -->
+					<section data-background="assets/img/background.png">
+						<h3>Tim Berners-Lee</h3>
+						<p>Conocido como el <b>padre de la Web</b> es un científico de la computación que estableció la <b>primera comunicación entre un cliente y un servidor usando el protocolo HTTP</b> en noviembre de 1989.</p>
+					</section>
+					<section data-background="assets/img/background.png">
+						<p>Él y su grupo crearon lo que por sus siglas en inglés se denomina Lenguaje <b>HTML (HyperText Markup Language)</b>, el protocolo <b>HTTP (HyperText Transfer Protocol)</b> y el sistema de localización de objetos en la web <b>URL (Uniform Resource Locator)</b>.</p>
+					</section>
+					<section data-background="assets/img/background.png">
+						<p>En 1989, el CERN era el <b>nodo de Internet más grande de Europa</b> y Berners-Lee vio la oportunidad de unir Internet e hipertexto (HTTP y HTML), de lo que surgiría la World Wide Web.</p>
+					</section>
+					<section data-background="assets/img/background.png">
+						<p>La <b>primera página web de Internet</b> fue creada por Tim Berners-Lee en 1991 alojada en el primer servidor web del mundo: <b>NeXT Computer</b> que se encontraba en el CERN y fue puesto en línea el 6 de agosto de 1991.</p>
+						<p><b>En octubre de 1994 Tim Berners-Lee fundo el consorcio World Wide Web (W3C)</b>. Actualmente sigue siendo el presidente y director.</p>
+					</section>
+
+					<!-- W3C -->
+					<section data-background="assets/img/background.png">
+						<h3>World Wide Web Consortium (W3C)</h3>
+						<p><b>World Wide Web Consortium (W3C)</b>, es un consorcio internacional que <b>generan y definen recomendaciones y estándares</b> que aseguran el crecimiento de la World Wide Web.</p>
+						<p><a href="https://www.w3.org/" target="_blank" title="W3C">https://www.w3.org/</a></p>
+						<p><a href="https://www.w3c.es/" target="_blank" title="W3C">https://www.w3c.es/</a></p>
+					</section>
+					<section data-background="assets/img/background.png">
+						<h3>Estándares publicados por el W3C</h3>
+						<table>
+							<tr>
+								<td>CSS</td>
+								<td>DOM</td>
+								<td>HTML</td>
+								<td>XHTML</td>
+							</tr>
+							<tr>
+								<td>XML</td>
+								<td>SOAP</td>
+								<td>SVG</td>
+								<td>...</td>
+							</tr>
+						</table>
+					</section>
+
+					<!-- HTML -->
+					<section data-background="assets/img/background.png">
+						<h3>HTML</h3>
+						<p><b>HTML</b>, es un estándar que significa <b>Lenguaje de Marcado para Hipertextos (HyperText Markup Language)</b> es el elemento de construcción más básico de una página web y se usa para crear y representar visualmente una sitio web.</p>
+						<p><b>HTML es una ampliación/extensión de SGML (Standard Generalized Markup Language)</b>, un estándar para la definición de lenguajes de marcas.</p>
+					</section>
+					<section data-background="assets/img/background.png">
+						<p><b>HTML determina el contenido de la página web, pero no su funcionalidad.</b></p>
+						<p>Otras tecnologías distintas de HTML son usadas generalmente para describir la apariencia/presentación de una página web (CSS) o su funcionalidad (JavaScript).</p>
+					</section>
+					<section data-background="assets/img/background.png">
+						<p>HTML usa "markup" o marcado para anotar textos, imágenes, y otros contenidos que se muestran en el navegador Web.</p>
+						<p>El lenguaje de marcas HTML incluye <b>"elementos/etiquetas"</b> especiales tales como <b>head, title, body, header, article, section, p, div, span, img</b>, y muchos más.</p>
+					</section>
+					<section data-background="assets/img/background.png">
+						<p><b>HiperText se refiere a enlaces que conectan una página Web con otra</b>, ya sea dentro de una página web o entre diferentes sitios web.</p>
+						<p><i>Los hipervínculos son un aspecto fundamental de la Web. Al subir contenido a Internet y vincularlo a páginas de otras personas, te haces participante activo de esta red mundial.</i></p>
+					</section>
+					<section data-background="assets/img/background.png">
+						<pre><code>&lt;!DOCTYPE html>
+&lt;html lang="es-ES">
+    &lt;head>
+        &lt;meta charset="utf-8">
+        &lt;title>HTML&lt;/title>
+    &lt;/head>
+    &lt;body>
+			<!-- Content -->
+    &lt;/body>
+&lt;/html></code></pre>
+					</section>
+
+					<!-- XHTML -->
+					<section data-background="assets/img/background.png">
+						<h3>XHTML</h3>
+						<p><b>XHTML (eXtensible HyperText Markup Language)</b> es a XML como HTML es a SGML. Es decir, XHTML es un lenguaje de marcado que es similar al HTML, pero con una sintaxis más estricta y expresada como XML.</p>
+						<p><a href="https://librosweb.es/libro/xhtml/" target="_blank" title="Libros Web XHTML">https://librosweb.es/libro/xhtml/</a></p>
+					</section>
+					<section data-background="assets/img/background.png">
+						<pre><code>&lt;?xml version="1.0"?>
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+&lt;html xmlns="https://www.w3.org/1999/xhtml">
+    &lt;head>
+        &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        &lt;title>XHTML&lt;/title>
+    &lt;/head>
+    &lt;body>
+			<!-- Content -->
+    &lt;/body>
+&lt;/html></code></pre>
+					</section>
+				</section>
+
+				<!-- HTML 5 -->
+				<section>
+					<section data-background="assets/img/background-pdf/background-v2.png">
+						<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/img/html5.png" class="img-250" alt="HTML 5">
+					</section>
+
+					<!-- Definition -->
+					<section data-background="assets/img/background.png">
+						<h3>HTML 5</h3>
+						<p><b>HTML5</b> es la última versión de HTML. <b>Quinta revisión</b> del lenguaje básico de WWW donde establece una serie de elementos y atributos que reflejan el uso típico de los sitios web modernos.</p>
+					</section>
+
+					<!-- Classification of technologies -->
+					<section data-background="assets/img/background.png">
+						<p>Diseñado para ser utilizable por todos los desarrolladores de Open Web, los recursos sobre las tecnologías se clasifican en varios grupos según su función:</p>
+					</section>
+					<section data-background="assets/img/background.png">
+						<ul>
+							<li><b>Semántica</b>: Permite describir con mayor precisión cuál es su contenido.</li>
+							<li><b>Conectividad</b>: Permite comunicarse con el servidor de formas nuevas e innovadoras.</li>
+						</ul>
+					</section>
+					<section data-background="assets/img/background.png">
+						<ul>
+							<li><b>Sin conexión y almacenamiento</b>: Permite a las páginas web almacenar datos localmente en el lado del cliente y operar sin conexión de manera más eficiente.</li>
+							<li><b>Multimedia</b>: Nos otorga un excelente soporte para utilizar contenido multimedia como lo son audio y video nativamente.</li>
+						</ul>
+					</section>
+					<section data-background="assets/img/background.png">
+						<ul>
+							<li><b>Gráficos y efectos 2D/3D</b>: Proporciona una amplia gama de nuevas características que se ocupan de los gráficos en la web como lo son canvas 2D, WebGL, SVG, etc.</li>
+							<li><b>Rendimiento e Integración</b>: Proporciona una mayor optimización de la velocidad y un mejor uso del hardware.</li>
+						</ul>
+					</section>
+					<section data-background="assets/img/background.png">
+						<ul>
+							<li><b>Acceso al dispositivo</b>: Proporciona APIs para el uso de varios componentes internos de entrada y salida de nuestro dispositivo.</li>
+							<li><b>CSS3</b>: Nos ofrece una nueva gran variedad de opciones para hacer diseños más sofisticados.</li>
+						</ul>
+					</section>
+
+					<!-- Means -->
+					<section data-background="assets/img/background.png">
+						<h3>RECURSOS</h3>
+						<p><a href="https://www.w3.org/html/" target="_blank" title="W3C HTML">https://www.w3.org/html/</a></p>
+						<p><a href="https://www.w3.org/TR/html5/" target="_blank" title="W3C Standar HTML 5">https://www.w3.org/TR/html5/</a></p>
+						<p><a href="https://www.w3.org/html/logo" target="_blank" title="W3C HTML 5 Logo">https://www.w3.org/html/logo/</a></p>
+					</section>
+
+					<!-- To learn -->
+					<section data-background="assets/img/background.png">
+						<h3>APRENDER</h3>
+						<p><a href="https://www.w3schools.com/html/" target="_blank" title="W3 Schools">https://www.w3schools.com/html/</a></p>
+						<p><a href="https://developer.mozilla.org/es/docs/HTML/HTML5/HTML5_lista_elementos" target="_blank" title="Escuela desarrollo Mozilla">https://developer.mozilla.org/es</a></p>
+					</section>
+				</section>
+
+				<!-- Elements list of HTML 5 -->
+				<section>
+					<section data-background="assets/img/background-pdf/background-v2.png">
+						<h1>Elementos<br/>HTML5</h1>
+					</section>
+					<section data-background="assets/img/background.png">
+						<h3>Elemento raíz</h3>
+						<table>
+							<thead>
+								<tr>
+									<th>Elemento</th>
+									<th>Descripción</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><a href="https://www.w3schools.com/tags/tag_doctype.asp" target="_blank" title="<!doctype html>">&lt;!doctype html&gt;</a></td>
+									<td><small>Define que el documento está bajo el estándar de HTML 5.</small></td>
+								</tr>
+								<tr>
+									<td><a href="https://www.w3schools.com/tags/tag_html.asp" target="_blank" title="html">&lt;html&gt;</a></td>
+									<td><small>Representa la raíz de un documento HTML o XHTML. Todos los demás elementos deben ser descendientes de este elemento.</small></td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section data-background="assets/img/background.png">
+						<h3>Metadatos del documento</h3>
+						<table>
+							<thead>
+								<tr>
+									<th>Elemento</th>
+									<th>Descripción</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><a href="https://www.w3schools.com/tags/tag_head.asp" target="_blank" title="head">&lt;head&gt;</a></td>
+									<td><small>Representa una colección de metadatos acerca del documento, incluyendo enlaces a, o definiciones de, scripts y hojas de estilo.</small></td>
+								</tr>
+								<tr>
+									<td><a href="https://www.w3schools.com/tags/tag_title.asp" target="_blank" title="title">&lt;title&gt;</a></td>
+									<td><small>Define el título del documento, el cual se muestra en la barra de título del navegador o en las pestañas de página. Solamente puede contener texto y cualquier otra etiqueta contenida no será interpretada.</small></td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section data-background="assets/img/background.png">
+						<table>
+							<thead>
+								<tr>
+									<th>Elemento</th>
+									<th>Descripción</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><a href="https://www.w3schools.com/tags/tag_base.asp" target="_blank" title="base">&lt;base&gt;</a></td>
+									<td><small>Define la URL base para las URLs relativas en la página.<br/>&lt;base href="https://www.example.com/"&gt;</small></td>
+								</tr>
+								<tr>
+									<td><a href="https://www.w3schools.com/tags/tag_link.asp" target="_blank" title="link">&lt;link&gt;</a></td>
+									<td><small>Usada para enlazar JavaScript y CSS externos con el documento HTML actual.</small></td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section data-background="assets/img/background.png">
+						<table>
+							<thead>
+								<tr>
+									<th>Elemento</th>
+									<th>Descripción</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><a href="https://www.w3schools.com/tags/tag_meta.asp" target="_blank" title="meta">&lt;meta&gt;</a></td>
+									<td><small>Define los metadatos que no pueden ser definidos usando otro elemento HTML.</small></td>
+								</tr>
+								<tr>
+									<td><a href="https://www.w3schools.com/tags/tag_style.asp" target="_blank" title="style">&lt;style&gt;</a></td>
+									<td><small>Etiqueta de estilo usada para escribir CSS en línea.</small></td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section data-background="assets/img/background.png">
+						<h3>Scripting</h3>
+						<table>
+							<thead>
+								<tr>
+									<th>Elemento</th>
+									<th>Descripción</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><a href="https://www.w3schools.com/tags/tag_script.asp" target="_blank" title="script">&lt;script&gt;</a></td>
+									<td><small>Define ya sea un script interno o un enlace hacia un script externo. El lenguaje de programación es JavaScript</small></td>
+								</tr>
+								<tr>
+									<td><a href="https://www.w3schools.com/tags/tag_noscript.asp" target="_blank" title="noscript">&lt;noscript&gt;</a></td>
+									<td><small>Define un contenido alternativo a mostrar cuando el navegador no soporta scripting.</small></td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section data-background="assets/img/background.png">
+						<h3>Secciones</h3>
+						<table>
+							<thead>
+								<tr>
+									<th>Elemento</th>
+									<th>Descripción</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><a href="https://www.w3schools.com/tags/tag_body.asp" target="_blank" title="body">&lt;body&gt;</a></td>
+									<td><small>Representa el contenido principal de un documento HTML. Solo hay un elemento &lt;body&gt; en un documento.</small></td>
+								</tr>
+								<tr>
+									<td><a href="https://www.w3schools.com/tags/tag_div.asp" target="_blank" title="div">&lt;div&gt;</a></td>
+									<td><small>Representa un contenedor genérico sin ningún significado especial.</small></td>
+								</tr>
+								<tr>
+									<td><a class="orange" href="https://www.w3schools.com/tags/tag_header.asp" target="_blank" title="header">&lt;header&gt;</a></td>
+									<td><small>Define la cabecera de una página o sección. Usualmente contiene un logotipo, el título del sitio Web y una tabla de navegación de contenidos.</small></td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section data-background="assets/img/background.png">
+						<table>
+							<thead>
+								<tr>
+									<th>Elemento</th>
+									<th>Descripción</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><a class="orange" href="https://www.w3schools.com/tags/tag_footer.asp" target="_blank" title="footer">&lt;footer&gt;</a></td>
+									<td><small>Define el pie de una página o sección. Usualmente contiene un mensaje de derechos de autoría, algunos enlaces a información legal o direcciones para dar información de retroalimentación.</small></td>
+								</tr>
+								<tr>
+									<td><a class="orange" href="https://www.w3schools.com/tags/tag_nav.asp" target="_blank" title="nav">&lt;nav&gt;</a></td>
+									<td><small>Define una sección que solamente contiene enlaces de navegación</small></td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section data-background="assets/img/background.png">
+						<table>
+							<thead>
+								<tr>
+									<th>Elemento</th>
+									<th>Descripción</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><a class="orange" href="https://www.w3schools.com/tags/tag_section.asp" target="_blank" title="section">&lt;section&gt;</a></td>
+									<td><small>Define una sección en un documento.</small></td>
+								</tr>
+								<tr>
+									<td><a class="orange" href="https://www.w3schools.com/tags/tag_article.asp" target="_blank" title="article">&lt;article&gt;</a></td>
+									<td><small>Define contenido autónomo que podría existir independientemente del resto del contenido.</small></td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section data-background="assets/img/background.png">
+						<table>
+							<thead>
+								<tr>
+									<th>Elemento</th>
+									<th>Descripción</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><a class="orange" href="https://www.w3schools.com/tags/tag_aside.asp" target="_blank" title="aside">&lt;aside&gt;</a></td>
+									<td><small>Define algunos contenidos vagamente relacionados con el resto del contenido de la página. Si es removido, el contenido restante seguirá teniendo sentido</small></td>
+								</tr>
+								<tr>
+									<td><a href="https://www.w3schools.com/tags/tag_hn.asp" target="_blank" title="h1 - h6">&lt;h1&gt; - &lt;h6&gt;</a></td>
+									<td><small>Los elemento de cabecera  implementan seis niveles de cabeceras de documentos; &lt;h1&gt; es la de mayor y &lt;h6&gt; es la de menor importancia. Un elemento de cabecera describe brevemente el tema de la sección que introduce.</small></td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section data-background="assets/img/background.png">
+						<table>
+							<thead>
+								<tr>
+									<th>Elemento</th>
+									<th>Descripción</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><a href="https://www.w3schools.com/tags/tag_address.asp" target="_blank" title="address">&lt;address&gt;</a></td>
+									<td><small>Define una sección que contiene información de contacto.</small></td>
+								</tr>
+								<tr>
+									<td><a class="orange" href="https://www.w3schools.com/tags/tag_main.asp" target="_blank" title="main">&lt;main&gt;</a></td>
+									<td><small>Define el contenido principal o importante en el documento. Solamente existe un elemento &lt;main&gt; en el documento.</small></td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section data-background="assets/img/background.png">
+						<h3>Semántica a nivel de Texto</h3>
+						<table>
+							<thead>
+								<tr>
+									<th>Elemento</th>
+									<th>Descripción</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><a class="orange" href="https://www.w3schools.com/tags/tag_time.asp" target="_blank" title="time">&lt;time&gt;</a></td>
+									<td><small>Representa un valor de fecha y hora; el equivalente legible por máquina puede ser representado en el atributo datetime.</small></td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section data-background="assets/img/background.png">
+						<h3>Contenido incrustado</h3>
+						<table>
+							<thead>
+								<tr>
+									<th>Elemento</th>
+									<th>Descripción</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><a class="orange" href="https://www.w3schools.com/tags/tag_video.asp" target="_blank" title="video">&lt;video&gt;</a></td>
+									<td><small>Representa un video y sus archivos de audio con la interfaz necesaria para reproducirlos.</small></td>
+								</tr>
+								<tr>
+									<td><a class="orange" href="https://www.w3schools.com/tags/tag_audio.asp" target="_blank" title="audio">&lt;audio&gt;</a></td>
+									<td><small>Representa un sonido o stream de audio.</small></td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section data-background="assets/img/background.png">
+						<table>
+							<thead>
+							<tr>
+								<th>Elemento</th>
+								<th>Descripción</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<td><a class="orange" href="https://www.w3schools.com/tags/tag_source.asp" target="_blank" title="source">&lt;source&gt;</a></td>
+								<td><small>Permite a autores especificar recursos multimedia alternativos para los elementos multimedia como &lt;video&gt; o &lt;audio&gt;.</small></td>
+							</tr>
+							<tr>
+								<td><a class="orange" href="https://www.w3schools.com/tags/tag_embed.asp" target="_blank" title="embed">&lt;embed&gt;</a></td>
+								<td><small>Representa un punto de integración para una aplicación o contenido interactivo externo que por lo general no es HTML.</small></td>
+							</tr>
+							</tbody>
+						</table>
+					</section>
+					<section data-background="assets/img/background.png">
+						<table>
+							<thead>
+								<tr>
+									<th>Elemento</th>
+									<th>Descripción</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><a class="orange" href="https://www.w3schools.com/tags/tag_canvas.asp" target="_blank" title="canvas">&lt;canvas&gt;</a></td>
+									<td><small>Representa un área de mapa de bits  en el que se pueden utilizar scripts para renderizar gráficos como gráficas, gráficas de juegos o cualquier imagen visual al vuelo.</small></td>
+								</tr>
+								<tr>
+									<td><a class="orange" href="https://www.w3schools.com/html/html5_svg.asp" target="_blank" title="svg">&lt;svg&gt;</a></td>
+									<td><small>Define una imagen vectorial embebida.</small></td>
+								</tr>
+								<tr>
+									<td><a class="orange" href="https://developer.mozilla.org/en-US/docs/Web/MathML/Element/math" target="_blank" title="math">&lt;math&gt;</a></td>
+									<td><small>Define una fórmula matemática.</small></td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section data-background="assets/img/background.png">
+						<h3>Formularios</h3>
+						<table>
+							<thead>
+								<tr>
+									<th>Elemento</th>
+									<th>Descripción</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><a class="orange" href="https://www.w3schools.com/tags/tag_datalist.asp" target="_blank" title="datalist">&lt;datalist&gt;</a></td>
+									<td><small>Representa un conjunto de opciones predefinidas para otros controles.</small></td>
+								</tr>
+								<tr>
+									<td><a class="orange" href="https://www.w3schools.com/tags/tag_keygen.asp" target="_blank" title="keygen">&lt;keygen&gt;</a></td>
+									<td><small>Genera claves asimétricas utilizando varios algoritmos. Dos de los algoritmos predeterminados son: RSA y DSA</small></td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section data-background="assets/img/background.png">
+						<table>
+							<thead>
+								<tr>
+									<th>Elemento</th>
+									<th>Descripción</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><a class="orange" href="https://www.w3schools.com/tags/tag_output.asp" target="_blank" title="output">&lt;output&gt;</a></td>
+									<td><small>Representa el resultado de un cálculo.</small></td>
+								</tr>
+								<tr>
+									<td><a class="orange" href="https://www.w3schools.com/tags/tag_progress.asp" target="_blank" title="progress">&lt;progress&gt;</a></td>
+									<td><small>Representa el progreso de finalización de una tarea.</small></td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+				</section>
+
+				<!-- Practical case -->
+				<section>
+					<section data-background="assets/img/background-pdf/background-v3.png">
+						<h1>CASO PRÁCTICO</h1>
+						<p><a href="https://www.jjpeleato.com/courses/html5forseo/example/" target="_blank" title="Ejemplos">Ejemplos</a></p>
+					</section>
+				</section>
+
+				<!-- Validators -->
+				<section>
+					<section data-background="assets/img/background-pdf/background-v4.png">
+						<h1>VALIDADORES</h1>
+						<p><small>by jjpeleato.com | #CW17 #HTML5SEO</small></p>
+					</section>
+					<section data-background="assets/img/background.png">
+						<ul>
+							<li>Estándar HTML 5:<br/>
+								<small><a href="https://validator.w3.org/" target="_blank" title="W3C">https://validator.w3.org/</a></small>
+							</li>
+							<li>SEO on Page:<br/>
+								<small><a href="https://metricspot.com/" target="_blank" title="Metricspot">https://metricspot.com/</a></small><br/>
+								<small><a href="https://www.wpdoctor.es/" target="_blank" title="WP Doctor">https://www.wpdoctor.es/</a> (WordPress)</small>
+							</li>
+							<li>WPO:<br/>
+								<small><a href="https://developers.google.com/speed/pagespeed/insights/?hl=es" target="_blank" title="Pagespeed Insights">Pagespeed Insights</a></small><br/>
+								<small><a href="https://tools.pingdom.com/" target="_blank" title="Pingdom Tools">Pingdom Tools</a></small><br/>
+								<small><a href="https://gtmetrix.com/" target="_blank" title="GTmetrix">GTmetrix</a></small>
+							</li>
+						</ul>
 					</section>
 				</section>
 
 				<!-- Thank you -->
-				<section>
-					<p class="h4">END!</p>
-					<p>Thank you very much!</p>
-					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/img/merci.gif" title="Thank you very much!" alt="Thank you very much!">
+				<section data-background="assets/img/background-pdf/background-v5.png">
+					<h3>¡FIN!</h3>
+					<blockquote>Simplemente, GRACIAS</blockquote>
+					<img src="assets/img/merci.gif" width="auto" height="250" alt="Thank you!">
+					<p><small>by jjpeleato.com | #CW17 #HTML5SEO</small></p>
 				</section>
 			</div>
 		</div>
+
 		<!-- Assets JS -->
 		<script src="assets/js/vendor/reveal.js"></script>
 		<script src="assets/js/vendor/notes.js"></script>
