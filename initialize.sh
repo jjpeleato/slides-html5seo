@@ -29,7 +29,7 @@ read -r answer
 
 if [ "$answer" != "${answer#[Yy]}" ] ; then
 	echo
-    echo "Sure! Cross your fingers and continue."
+	echo "Sure! Cross your fingers and continue."
     sleep 1
 else
     echo
