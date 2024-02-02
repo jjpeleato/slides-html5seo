@@ -9,6 +9,7 @@ package-lock.json
 yarn.lock
 yarn-error.log
 public/assets
+public/example/media
 
 #############################
 # Logs, databases and misc. #

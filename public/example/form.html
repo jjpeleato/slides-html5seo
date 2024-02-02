@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Form</title>
+    </head>
+    <body>
+        <form method="get" action="#">
+            <input name="form_number" id="form_number" type="number" min="1" max="10" ><br/>
+            <input name="form_date" id="form_date" type="date"><br/>
+            <input name="form_month" id="form_month" type="month"><br/>
+            <input name="form_week" id="form_week" type="week"><br/>
+            <input name="form_time" id="form_time" type="time"><br/>
+            <input name="form_telephone" id="form_telephone" type="tel"><br/>
+            <input name="form_color" id="form_color" type="color"><br/>
+            <input name="x" type="range" min="100" max="700" step="9.09090909" value="509.090909">
+
+            <hr/>
+
+            <input name="form_url" id="form_url" type="url" list="url_list">
+            <datalist id="url_list">
+                <option value="http://www.google.com" label="Google">
+                <option value="http://www.facebook.com" label="Facebook">
+            </datalist><br/><br/>
+            <input name="form_email" id="form_email" type="email" list="email_list" multiple>
+            <datalist id="email_list">
+                <option value="example@example.com" label="Congreso">
+                <option value="example@example.com" label="Web">
+            </datalist>
+
+            <hr/>
+
+            <label>
+                Attachments:
+                <input type="file" multiple name="att">
+            </label>
+        </form>
+    </body>
+</html>
